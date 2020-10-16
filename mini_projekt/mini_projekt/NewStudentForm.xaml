@@ -1,0 +1,23 @@
+﻿<Window x:Class="mini_projekt.NewStudentForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:mini_projekt"
+        mc:Ignorable="d"
+        Title="Přidat Studenta" Height="423.93" Width="540.428" Loaded="Window_Loaded">
+    <Grid>
+        <Label Content="Nový student" HorizontalAlignment="Left" Margin="34,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Jméno:" HorizontalAlignment="Left" Margin="34,41,0,0" VerticalAlignment="Top"/>
+        <Label Content="Příjmení:" HorizontalAlignment="Left" Margin="34,72,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_Name" HorizontalAlignment="Left" Height="23" Margin="113,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235"/>
+        <TextBox x:Name="txt_Surname" HorizontalAlignment="Left" Height="23" Margin="113,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235"/>
+        <ListBox x:Name="lsbox_Subjects" HorizontalAlignment="Left" Height="169" Margin="34,152,0,0" VerticalAlignment="Top" Width="183"/>
+        <Label Content="Přeměty" HorizontalAlignment="Left" Margin="34,121,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lstbox_SubjectsOfStudents" HorizontalAlignment="Left" Height="169" Margin="311,152,0,0" VerticalAlignment="Top" Width="183"/>
+        <Label Content="Přeměty studenta:" HorizontalAlignment="Left" Margin="311,121,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btn_addSubject" Content="&gt;" HorizontalAlignment="Left" Margin="243,228,0,0" VerticalAlignment="Top" Width="48" Click="btn_addSubject_Click"/>
+        <Button x:Name="btn_SaveStudent" Content="Uložit" HorizontalAlignment="Left" Margin="419,342,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+
+    </Grid>
+</Window>
